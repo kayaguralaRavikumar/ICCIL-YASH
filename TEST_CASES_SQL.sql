@@ -1,0 +1,15 @@
+INSERT INTO `CMP_MST`(`CMP_NAME`, `CMP_CODE`, `CMP_CRTD_DATE`) VALUES ('A','A',sysdate()); 
+
+delete from ITEM_STOCK_MST; 
+
+delete from WAREHOUSE_MST; 
+
+delete from VARIATION_MST; 
+
+delete from ITEM_MST;  
+
+INSERT INTO `ITEM_MST`(`ITEM_NAME`,`ITEM_CMP`,`ITEM_CRTD_DATE`, `ITEM_UPDT_DATE`) VALUES ('Y',1,sysdate(),sysdate());
+
+INSERT INTO `WAREHOUSE_MST`(`WRHS_NAME`, `WRHS_LOCATION`, `WRHS_CRTD_DATE`, `WRHS_UPDT_DATE`) VALUES ('W1','BAN',sysdate(),sysdate());
+
+INSERT INTO `VARIATION_MST`(`VRT_NAME`, `CRT_CRTD_DATE`) VALUES ('V1',sysdate());
